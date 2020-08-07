@@ -1,0 +1,5 @@
+{
+    "Port": 3400,
+    "Static_Variable": "static",
+    "Connection_String":"mongodb://localhost:27017/spaghetti?retryWrites=true&w=majority"
+}
