@@ -173,12 +173,12 @@ func main() {
 	//Init Router
 	r := mux.NewRouter()
 
-	r.HandleFunc("/api/knowledge", getKnowledges).Methods("GET")
+	//r.HandleFunc("/api/knowledge", getKnowledges).Methods("GET")
 	r.HandleFunc("/api/knowledge/{id}", getKnowledge).Methods("GET")
-	r.HandleFunc("/api/knowledge", createKnowledge).Methods("POST")
-	r.HandleFunc("/api/knowledge/{id}", updateKnowledge).Methods("PUT")
-	r.HandleFunc("/api/knowledge/{id}", deleteKnowledge).Methods("DELETE")
+	//r.HandleFunc("/api/knowledge", createKnowledge).Methods("POST")
+	//r.HandleFunc("/api/knowledge/{id}", updateKnowledge).Methods("PUT")
+	//r.HandleFunc("/api/knowledge/{id}", deleteKnowledge).Methods("DELETE")
 
-	log.Fatal(http.ListenAndServe(":3400", r))
+	log.Fatal(http.ListenAndServe(":3404", r))
 
 }
